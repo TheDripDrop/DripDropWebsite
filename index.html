@@ -34,8 +34,18 @@
 
     <!-- The Icon that shows up on the literal page tab -->
     <link rel="shortcut icon" href="img/droplet.ico">
+<div id="preloader">
+    <div id="spinner_container">
+      <div class="company">
+        <div class="border">The DripDrop
+          <img src="img/spinner.gif" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
 
 </head>
+
 
 <body id="page-top">
 
@@ -166,7 +176,9 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
+                
               <!--   <div class="col-lg-4 col-sm-6">
                     <div class="portfolio-box">
                         <img src="img/LiveModel2.png" class="img-responsive" alt="">
@@ -188,6 +200,10 @@
                <!--  <div class="col-lg-4 col-sm-6">
                     
                 </div> -->
+        
+                
+
+
             </div>
         </div>
     </section>
@@ -334,7 +350,44 @@ Sam and Oliver entered an intensive invention competition by The Charles Gates F
         </div>
     </aside>
 
+<section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">DripDrop T-Shirts</h2>
+                    <hr class="light">
+                    <p class="text-faded">
 
+<img src="img/Patents.jpeg" class="img-responsive" alt="">
+<img src="img/Patents.jpeg" class="img-responsive" alt="">
+<img src="img/Patents.jpeg" class="img-responsive" alt="">
+
+
+<h2>Purchase Now!</h2>
+<div class="col-lg-12 text-center">
+
+
+<a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=sRFP5Xplv4MkunMJyo_5qTClpKh7xMfCT-S16FNLIkgc7Ie_0mCvbafUTPK&dispatch=5885d80a13c0db1f8e263663d3faee8d64ad11bbf4d2a5a1a0d303a50933f9b2" target="_blank">
+ <img src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" > </img>
+</a>
+
+
+            </div>
+
+</div>
+
+</p>
+
+
+                     
+           
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -405,15 +458,21 @@ I am interested in licensing the DripDrop
                     <p><a target="_blank" href="https://www.facebook.com/dripdropcone">The DripDrop</a></p>
                 </div>
                 <br>
-                <div class="col-lg-4 text-center">
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
 
 
 
 
                 </div>
-            </div>
-        </div>
-    </section>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -428,6 +487,217 @@ I am interested in licensing the DripDrop
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+
+ </footer>
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="owl-carousel/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/myage.js"></script>
+  <script src="js/lightbox.min.js"></script>
+  <script src="magnific-popup/jquery.magnific-popup.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      SLAMR.preloader();
+      SLAMR.nav();
+      SLAMR.parallax(true);
+      SLAMR.slider("#slides", {
+        'play': false,
+        'animation': 'fade'
+      });
+      SLAMR.skillbar("animated");
+      SLAMR.scrollAnim("yes");
+      SLAMR.owlCarousel({
+        '#owl-carousel-blog': {
+          singleItem: true,
+          lazyLoad: true,
+          autoPlay: true
+        },
+        '#owl-carousel-clients': {
+          navigation: true,
+          navigationText: [
+            "<i class='fa fa-angle-left arrow-round'></i>",
+            "<i class='fa fa-angle-right arrow-round'></i>"
+          ]
+        },
+        '#owl-carousel-testimonial': {
+          singleItem: true,
+          transitionStyle: "goDown",
+          navigation: true,
+          navigationText: [
+            "<i class='fa fa-angle-left arrow-round'></i>",
+            "<i class='fa fa-angle-right arrow-round'></i>"
+          ]
+        },
+      });
+      SLAMR.bootstrapCarousel({
+        '#carousel-head': {
+          interval: 5000,
+          pause: false
+        }
+      });
+      SLAMR.contactForm();
+      SLAMR.fitVids(".video-container");
+
+      SLAMR.magnific({
+        '.image-modal': {
+          type: 'image',
+          image: {
+            markup: '<div class="mfp-figure">' +
+              '<div class="mfp-close"></div>' +
+              '<div class="mfp-img"></div>' +
+              '<div class="mfp-bottom-bar">' +
+              '<div class="mfp-title"></div>' +
+              '<div class="mfp-counter"></div>' +
+              '</div>' +
+              '</div>',
+            titleSrc: 'title',
+            verticalFit: true,
+            tError: '<a href="%url%">The image</a> could not be loaded.'
+          },
+          closeBtnInside: true,
+          midClick: true,
+          fixedContentPos: false,
+          preloader: true,
+          gallery: {
+            enabled: true
+          },
+          removalDelay: 0,
+          mainClass: 'mfp-fade'
+        }
+      });
+
+      // Magnific Popups
+      // ROW 1
+      $('.mP-chaz').magnificPopup({
+        items: [{
+          src: 'https://vimeo.com/71078165',
+          type: 'iframe' // this overrides default type
+        }, {
+          src: 'img/portfolio/port-1.jpg'
+        }, {
+          src: 'img/portfolio/port-1-2.jpg'
+        }, {
+          src: 'img/portfolio/port-1-3.jpg'
+        }, {
+          src: 'img/portfolio/port-1-4.jpg'
+        }],
+        gallery: {
+          enabled: true
+        },
+        fixedContentPos: false,
+        verticalFit: true,
+        type: 'image' // this is default type
+      });
+
+      $('.mP-cp').magnificPopup({
+        items: [{
+          src: 'img/portfolio/port-2.jpg',
+        }, {
+          src: 'img/portfolio/port-2-3.jpg'
+        }, {
+          src: 'img/portfolio/port-2-4.jpg'
+        }, {
+          src: 'img/portfolio/port-2-5.jpg'
+        }],
+        gallery: {
+          enabled: true
+        },
+        fixedContentPos: false,
+        verticalFit: true,
+        type: 'image' // this is default type
+      });
+
+      $('.mP-jesuitPaper').magnificPopup({
+        items: [{
+          src: 'img/portfolio/port-3.jpg',
+        }, {
+          src: 'img/portfolio/port-3-2.jpg'
+        }],
+        gallery: {
+          enabled: true
+        },
+        fixedContentPos: false,
+        verticalFit: true,
+        type: 'image' // this is default type
+      });
+
+      // ROW 2
+      $('.mP-soldier').magnificPopup({
+        items: [{
+          src: 'img/portfolio/port-4.jpg',
+        }],
+        gallery: {
+          enabled: false
+        },
+        fixedContentPos: false,
+        verticalFit: true,
+        type: 'image' // this is default type
+      });
+
+      $('.mP-lyre').magnificPopup({
+        items: [{
+          src: 'img/portfolio/port-5.jpg',
+        }, {
+          src: 'img/portfolio/port-5-2.jpg'
+        }, {
+          src: 'img/portfolio/port-5-3.jpg'
+        }],
+        gallery: {
+          enabled: true
+        },
+        fixedContentPos: false,
+        verticalFit: true,
+        type: 'image' // this is default type
+      });
+
+      $('.mP-noisesOff').magnificPopup({
+        items: [{
+          src: 'img/portfolio/port-6.jpg',
+        }],
+        gallery: {
+          enabled: true
+        },
+        fixedContentPos: false,
+        verticalFit: true,
+        type: 'image' // this is default type
+      });
+
+      // ROW 1
+      $('.mP-c2').magnificPopup({
+        items: [{
+          src: 'img/portfolio/port-2.jpg',
+        }, {
+          src: 'img/portfolio/port-2-3.jpg'
+        }, {
+          src: 'img/portfolio/port-2-4.jpg'
+        }, {
+          src: 'img/portfolio/port-2-5.jpg'
+        }],
+        gallery: {
+          enabled: true
+        },
+        fixedContentPos: false,
+        verticalFit: true,
+        type: 'image' // this is default type
+      });
+
+
+      SLAMR.portfolioFilter("#portfolio .filter a", "#portfolio .portfolio-grid div");
+      SLAMR.portfolio(".portfolio-link", {
+        "pWrapper": ".portfolio-wrapper",
+        "section": "#portfolio",
+        "pContent": ".portfolio-content",
+        "pContainer": ".portfolio-container",
+        "close": ".portfolio-close",
+        "carousel": ".owl-portfolio"
+      });
+    }); //document ready
+  </script>
+
+ 
 
 </body>
 
